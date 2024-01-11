@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="static/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fb1b5bd402.js" crossorigin="anonymous"></script>
+    <title>Restaurants statistic</title>
+</head>
+<body>
+    <header>
+        <div class="full-width-div">   
+            <div class="flex-container">
+                <div class="oval-image"></div>
+                    <p class="introduction_text">
+                        This page made by me, for represent my abilities.<br>
+                        Danylo Ivanov
+                    </p>
+            </div>  
+        </div>
+    </header>
+
+    <div class="row align-items-md-stretch" id="mainpart"> 
+        <div class="col-md-6 firstIframe">
+            <p>
+                This graph (as well as all subsequent ones) was created using Jupyter Notebook.<br>
+                After processing the input data, I plotted a graph showing the relationship between apartment prices and square footage.
+                I added a regression line to the main chart. Examining the outcomes leads to the following conclusions: 
+                In about <span>52%</span> of cases, we observe the dependency of <span>+1 m²</span> of surface area equaling <span>+9,760 PLN</span>.
+                The average price of an apartment in Krakow is around 750,000 PLN, and the average apartment size is 56 m².
+                The standard deviation is around 280,000 PLN for price and approximately 20 m² for surface area.
+                The most expensive apartment is a <span>1,700,000 PLN</span>.
+            </p>
+        </div>
+        
+        <div class="col-md-6 firstIframe">
+            <iframe src="static/interactive_scatter_plot_krk.html"></iframe>
+        </div>
+    
+        <hr>
+        <div class="col-md-6 secondIframe">
+            <iframe src="static/interactive_scatter_plot_warszawa.html"></iframe>
+        </div>
+        <div class="col-md-6 secondIframe">
+            <p id="WarszawaText">
+                The situation in Warsaw looks like this:<br>
+                The regression method accounts for <span>57%</span> of cases.
+                A shift of <span>1 m²</span> corresponds to a price adjustment of <span>13,500 PLN</span>.
+                The average property price is 920,000 PLN, with an average area of 61 m².
+                The deviation is 400,000 PLN in price and 23 m² in area.
+                The most expensive offer is <span>two and a half million PLN</span>.
+            </p>
+        </div>
+        
+    </div>
+    
+    <footer>
+        <p>Danylo Ivanov</p>
+        <p>Go back to GitHub</p>
+        <div class="git">
+            <a href="https://github.com/CmoonC?tab=repositories"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <p class="end"> Copyright by Danylo Ivanov</p>
+    </footer>
+</body>
+</html>
